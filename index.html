@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/abstract.png">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Login</title>
+    <title>Cadastre-se</title>
 </head>
 <body>
     <section class="container">
-        <div class="image-bg">
-        </div>
+
+        <div class="image-bg"></div>
+
         <div class="forms">
+
             <h1>Cadastre-se Agora!</h1>
             <span><img width="40px" src="./img/abstract.png" alt=""></span>
-            <form action="#">
+
+            <form action="./sucesso.html" id="formulario">
+
                 <label for="nome">nome</label>
-                <input id="nome" type="text" placeholder="Nome Completo" required>
+                <input id="nome" type="text" placeholder="Nome Completo" >
+
                 <label for="email">email</label>
-                <input id="email" type="email" required placeholder="Email">
+                <input id="email" type="email" placeholder="Email" >
+
                 <label for="cpf">cpf</label>
-                <input id="cpf" type="text" placeholder="CPF" required>
+                <input id="cpf" type="text" placeholder="CPF" >
+
                 <label for="senha">senha</label>
                 <input id="senha" type="password" placeholder="Senha" required>
-                <button type="submit">Cadastrar</button>
+
+                <label for="confirmar-senha">confirmar senha</label>
+                <input id="confirmar-senha" type="password" placeholder="Confirmar Senha" required>
+                <span id="erro-msg" class="erro-msg"></span>
+
+                <button id="cadastrar" type="submit">Cadastrar</button>
+
             </form>
+
         </div>
+
+        <script src="./js/main.js"></script>
     </section>
 </body>
 </html>
