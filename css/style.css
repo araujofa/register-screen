@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -13,7 +13,7 @@
 }
 
 .image-bg {
-    width: 60%;
+    width: 45%;
     background-image: url('../img/programming-background-concept.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -21,18 +21,19 @@
 }
 
 div.forms {
-    width: 40%;
-    background-color: #f5f5f5;
+    width: 55%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     text-align: center;
     user-select: none;
+    padding: 10px;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.2em;
+    font-weight: 400;
 }
 
 form {
@@ -42,15 +43,22 @@ form {
 }
 
 label {
-    display: none;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #696969;
 }
 
 input {
     width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #989ea333;
+}
+
+input::placeholder{
+    color: #8888889c;
 }
 
 .input-erro {
@@ -64,13 +72,14 @@ input {
 }
 
 button {
+    font-size: 1em;
     width: 100%;
     background-color: #6e2bdc;
     color: white;
-    padding: 14px;
     margin: 8px 0;
+    padding: 14px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s linear;
 }
@@ -79,24 +88,15 @@ button:hover {
     background-color: #5521a9;
 }
 
-p {
-    color: #888;
+.have-account {
+    font-weight: 300;
+    color: #494949;
+    font-size: 0.9em;
 }
 
-.icons-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.icons{
-    width: 110px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(142, 142, 249, 0.504);
-    border-radius: 10px;
+.have-account a {
+    text-decoration: none;
+    color: #6e2bdc;
 }
 
 @media (max-width: 1000px) {
