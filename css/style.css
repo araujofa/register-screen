@@ -23,7 +23,7 @@
 div.forms {
     width: 55%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     gap: 15px;
     text-align: center;
